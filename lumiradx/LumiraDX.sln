@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumiraDX", "LumiraDX\LumiraDX.csproj", "{71A3C9FA-5D53-4C77-9758-1A744B32C3C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumiraDX.Test", "..\LumiraDX.Test\LumiraDX.Test\LumiraDX.Test.csproj", "{4843EDE8-A0DD-49C5-8DEB-4DDE883C8791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71A3C9FA-5D53-4C77-9758-1A744B32C3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A3C9FA-5D53-4C77-9758-1A744B32C3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A3C9FA-5D53-4C77-9758-1A744B32C3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A3C9FA-5D53-4C77-9758-1A744B32C3C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4843EDE8-A0DD-49C5-8DEB-4DDE883C8791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4843EDE8-A0DD-49C5-8DEB-4DDE883C8791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4843EDE8-A0DD-49C5-8DEB-4DDE883C8791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4843EDE8-A0DD-49C5-8DEB-4DDE883C8791}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFA0D4ED-FBE7-4069-B50A-2A7F5FAFED50}
+	EndGlobalSection
+EndGlobal

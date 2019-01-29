@@ -1,0 +1,66 @@
+﻿@using LumiraDX.Models
+@model OperationViewModel
+
+
+<form method="post">
+
+    <div class="row panel panel-default">
+
+        <h3 class="panel-heading">Calculator</h3>
+
+        <div class="panel-body">
+
+            <select asp-for="OperandValue1"
+                    asp-items="@(new SelectList(Operand.GetOperandItems(),"Name","Value"))"></select>
+            <span asp-validation-for="OperandValue1"></span>
+
+            <select asp-for="Operator"
+                    asp-items="@(new SelectList(Operator.GetOperatorItems(),"Name","Value"))"></select>
+            <span asp-validation-for="Operator"></span>
+
+            <select asp-for="OperandValue2"
+                    asp-items="@(new SelectList(Operand.GetOperandItems(),"Name","Value"))"></select>
+            <span asp-validation-for="OperandValue2"></span>
+
+        </div>
+
+        <div class="panel-footer">
+            <input class="btn btn-default btn-primary" type="submit" name="save" value="Calculate" />
+        </div>
+
+        <div class="panel-body" id="resultPanel" hidden>
+            <div>
+                <span id="calculationMessage">@Model.Message</span>
+                <button type="button" class="ml-2 mb-1 close right" data-dismiss="toast" id="closeResultPanel">&times;</button>
+            </div>
+            <div id="result" hidden>
+                <span>Result:</span>
+                <span id="finalResult">@Model.FormattedMessage</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#closeResultPanel").click(function () {
+            $("#resultPanel").hide();
+        });
+
+        $(document).ready(function () {
+
+            if ($.trim($("#calculationMessage").html()) != '') {
+                $("#resultPanel").show();
+            }
+
+            if ($.trim($("#finalResult").html()) != '') {
+                $("#result").show();
+            }
+
+
+
+        });
+    </script>
+
+</form>
+
+
+
